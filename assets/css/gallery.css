@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root {
+    background-color:lightblue;
+
+}
+
+
+.card:nth-child(odd) {
+    width: 40%;
+}
+
+.card:nth-child(even) {
+    width: 40%;
+    margin-left: 50%;
+
+}
+
+
+
+
+
+#title {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    padding-top: 10px;
+    color: lightblue;
+}
+
+#title::before {
+    content: "Title: ";
+}
+
+#description{
+    display: none;
+    transition: ease-in-out 2s;
+
+}
+
+#title:hover + #description{
+    display: grid;
+    text-align: center;
+    transition: ease-in-out 2s;
+    padding: 30px;
+    color: darkslategray;
+    
+}
+
+#director{
+    text-align: end;
+    color: lightgreen;
+}
+
+#producer {
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+#date {
+    text-align: start;
+    color: lightcoral;
+}
+
+
+
+/* #description,#director,#producer,#date{
+    margin-left: 30px;
+    color: rgb(112, 102, 102);
+    font-family: 'IBM Plex Mono', monospace;
+} */
+/* #director,#producer,#date{
+    margin-left: 30px;
+    color: rgb(148, 99, 99);
+    font-size: 20px;
+} */
+/* .choose{
+    background-color: red;
+} */

@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  background-color: #cbdbcb;
+
+}
+
+
+.card:nth-child(odd) {
+  width: 40%;
+  margin-left: 50%;
+}
+
+.card:nth-child(even) {
+  width: 40%;
+ 
+
+}
+
+#name {
+  text-align: start;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  padding-top: 10px;
+  color: lightblue;
+}
+
+#name::before {
+  content: "Name: ";
+}
+
+#age{
+  text-align: end;
+
+}
+
+
+#gender{
+  text-align: center;
+  color: lightgreen;
+}
+
+#eye {
+  text-align: start;
+  color: lightcoral;
+}
+
+#films {
+  text-align: center;
+  color: darkgoldenrod;
+}
